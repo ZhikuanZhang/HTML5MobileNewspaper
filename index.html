@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <style>
+    header {
+      box-shadow: 2px 0 5px 1px rgba(0, 0, 0, 0.5);
+      padding: 0 5%;
+    }
+    .clearfix::after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+
+    .types {
+      position: relative;
+      line-height: 2rem;
+    }
+    .types li {
+      font-size: .6rem;
+      float: left;
+      width: 33.33%;
+      text-align: center;
+    }
+    .types .bar {
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 33.33%;
+      height: 2px;
+      background: red;
+      transition: all .3s ease;
+    }
+    .content {
+      padding: 0 5%;
+      margin-top: 2rem;
+    }
+    .content-box {
+      width: 100%;
+    }
+    .content-box li {
+      float: left;
+      width: 33%;
+      margin-right: 0.5%;
+      /*height: 200px;*/
+      background: red;
+      margin-bottom: .5rem;
+    }
+    .content-box li:nth-child(3n) {
+      margin-right: 0;
+    }
+    .content-box li img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <ul class="types clearfix">
+      <li class="active">政治</li>
+      <li>科技</li>
+      <li>经济</li>
+      <div class="bar"></div>
+    </ul>
+  </header>
+  <section class="content">
+    <ul class="content-box d-b clearfix">
+      
+      <li data-src="/guangming">
+        <a href="./src/template/guangming.html"><img src="./src/imgs/renmin.jpg" alt=""></a>
+      </li>
+	  <li>
+        <img src="./src/imgs/anqing.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/guangzhou.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/huanqiu.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/jingji.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/jingying.jpg" alt="">
+      </li>
+    </ul>
+    <ul class="content-box d-n clearfix">
+      <li>
+        <img src="./src/imgs/nanfang.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/guangming.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/shenyang.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/xian.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/yangzi.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/zhongguoqingnian.jpg" alt="">
+      </li>
+    </ul>
+    <ul class="content-box d-n clearfix">
+      <li>
+        <img src="./src/imgs/renmin.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/renmin.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/renmin.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/renmin.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/renmin.jpg" alt="">
+      </li>
+      <li>
+        <img src="./src/imgs/renmin.jpg" alt="">
+      </li>
+    </ul>
+  </section>
+
+  <script src="./src/js/vendor/jquery.min.js"></script>
+  <script src="./src/js/index.js" charset="utf-8"></script>
+</body>
+</html>
